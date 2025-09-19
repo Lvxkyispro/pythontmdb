@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "routes": [
+    {
+      "src": "/api/anime/by-tmdb/(?<tmdb_id>[^/]+)",
+      "dest": "/api/anime/by-tmdb/[tmdb_id].py"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/api/index.py"
+    }
+  ],
+  "env": {
+    "TMDB_API_KEY": "your_tmdb_api_key_here"
+  }
+}
